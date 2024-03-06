@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STI Enrollment Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/hw.css">
+        <style>
+            .centerAlign {
+                text-align: center;
+                }
+            
+            .leftAlign{
+                text-align: left;
+                margin-left: 1%;
+            }
+
+        </style>
+        <script src ="enrollmentjs.js"></script>
+    </head>    
+
+    <body style="background-color: lightyellow; border: 5px solid; border-color: navy;">
+        
+        <div class="centerAlign">
+
+            <h1>STI Enrollment Form</h1>
+            <h2>Welcome to STI!<br>
+                If you're looking to enroll, make sure to input your info on all fields. Thank you! </h2>
+        
+            <div class = "leftAlign">
+                
+                <h3>Input your information below</h3>
+            
+            <!-- Enrollment Form -->
+                <form>
+                    <label for="fname"><strong>First Name</strong></label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Juan"><br>
+                    
+                    <label for="mname"><strong>Middle Name</strong></label><br>
+                        <input type="text" id="mname" name="mname" placeholder="Santiago"><br>
+            
+                    <label for="lname"><strong>Last Name</strong></label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Dela Cruz"><br>
+            
+                    <label for="contactnum"><strong>Phone Number</strong></label><br>
+                        <input type="tel" id="contactnum" name="contactnum" pattern="09[0-9]{9}" placeholder="ex. 09123456789"><br>
+            
+                    <label for="email"><strong>Email</strong></label><br>
+                        <input type="email" id="email" name="email" placeholder="ex. juansdc@email.com"><br>
+            
+                    <p><strong>Course</strong></p>
+                            <input type="radio" id="bsit" name="course" value = "BSIT">
+                            <label for="bsit">Bachelor of Science in Information Technology</label> <br>
+            
+                            <input type="radio" id="bscpe" name="course" value = "BSCPE">
+                            <label for="bscpe">Bachelor of Science in Computer Engineering</label> <br>
+            
+                            <input type="radio" id="bmma" name="course" value = "BMMA">
+                            <label for="bmma">Bachelor of Multimedia Arts</label> <br>
+            </div>
+                
+                    <!-- Submit/Reset Button -->
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">    
+                    <br> 
+                </form>
+            
+            <!-- Multimedia -->
+            <br>
+            <video poster="https://malolossti-my.sharepoint.com/:i:/g/personal/francia_262365_malolos_sti_edu_ph/EVeDfYijYotJlDgEbxsCIroB6OBzcDC4KJrRGLGNvhHefA?e=cHz3P8" controls>
+                <source src="https://malolossti-my.sharepoint.com/personal/francia_262365_malolos_sti_edu_ph/_layouts/15/stream.aspx?id=%2Fpersonal%2Ffrancia%5F262365%5Fmalolos%5Fsti%5Fedu%5Fph%2FDocuments%2Fwebsys%20media%2F02%20Assignment%201%2FEnrollment%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+        </div>
+
+
+    </body>
+</html>
