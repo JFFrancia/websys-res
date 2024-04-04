@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.page > * {
+    flex: 1 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: sienna;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    font-style: bold;
+    font-family: Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+h2 {
+    font-style: bold;
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+}
+
+ul {
+    list-style: none;    
+}
+
+li {
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a:link {
+    color: brown;
+  }
+  
+  a:visited {
+    color: gray;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  a:active {
+    color: chocolate;
+  }
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 75px;
+    width: 100%;
+    background-color:sienna;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+.learnmore {
+    display:flex;
+    width:40%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main {
+    background-color: beige;
+    padding: 10px;
+}
+
+.leftside {
+    background-color:navajowhite;
+    color: black;
+    padding: 10px;
+}
+
+.rightside {
+    background-color:navajowhite;
+    color: black;
+    padding: 10px;
+}
+
+.painting-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.imgtitle {
+    font-style: italic;
+    text-align: center;
+}
+
+.anita-introduction {
+    font-size:medium;
+}
+
+.responsive {
+    width:100%;
+    height:auto;
+}
+
+
+p {
+    font-family: Helvetica, sans-serif;
+    
+}   
+
+@media all and (min-width: 800px){
+    .main {
+       flex: 3;
+       order: 2;
+    }
+
+    .leftside{
+       order: 1;
+    }
+
+    .rightside{
+       order: 2;
+    }
+
+    .footer{
+       order: 4;
+    }
+}
+
+@media all and (min-width: 600px){
+   .side {
+       flex: 1;
+   }
+}
